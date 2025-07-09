@@ -5,8 +5,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.management.relation.Role;
-
 @Entity
 @Data
 @NoArgsConstructor
@@ -25,5 +23,4 @@ public class User {
 
     private String fullName;
 
-    private Role role;
 }

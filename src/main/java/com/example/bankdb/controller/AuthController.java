@@ -1,4 +1,4 @@
 package com.example.bankdb.controller;
 
-public class BankController {
+public class AuthController {
 }
