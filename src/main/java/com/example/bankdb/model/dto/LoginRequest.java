@@ -1,11 +1,16 @@
 package com.example.bankdb.model.dto;
 
+import jakarta.validation.constraints.NotBlank;
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
 public class LoginRequest {
-    private String username;
+
+    @NotBlank
+    private String identifier;
+
+    @NotBlank
     private String password;
 }

@@ -3,6 +3,7 @@ spring:
     url: jdbc:postgresql://localhost:5432/bank_db
     username: postgres
     password: 12345
+
   jpa:
     hibernate:
       ddl-auto: update
@@ -11,5 +12,24 @@ spring:
       hibernate:
         format_sql: true
 
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: abdullayevmuxtar22@gmail.com
+    password: opcdgtwvyilcqwlh
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
 server:
   port: 8080
+
+jwt:
+  secret: w7q8uN1pGxnclThJ4cTkuLgkzysv6uV7g5C9aLpmrfqYsUiLMT6Qc+u8GU8DjWqYpXYDc0JQ54nYJ9jRFepRmQ==
+  access-token:
+    expiration: 600000
+  refresh-token:
+    expiration: 36000000
