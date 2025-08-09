@@ -8,10 +8,10 @@ import java.math.BigDecimal;
 @Data
 public class PaymentRequest {
 
-    @Schema(description = "ID of the source account", example = "1", required = true)
+    @Schema(description = "ID of the source account", example = "1")
     private Long sourceAccountId;
 
-    @Schema(description = "Amount to withdraw", example = "100.00", required = true)
+    @Schema(description = "Amount to withdraw", example = "100.00")
     private BigDecimal amount;
 
     @Schema(description = "Optional description for the payment", example = "ATM withdrawal")

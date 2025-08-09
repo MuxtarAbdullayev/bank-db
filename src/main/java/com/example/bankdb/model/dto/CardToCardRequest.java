@@ -8,13 +8,13 @@ import java.math.BigDecimal;
 @Data
 public class CardToCardRequest {
 
-    @Schema(description = "Source card ID", example = "10", required = true)
+    @Schema(description = "Source card ID", example = "10")
     private Long sourceCardId;
 
-    @Schema(description = "Destination card ID", example = "12", required = true)
+    @Schema(description = "Destination card ID", example = "12")
     private Long destinationCardId;
 
-    @Schema(description = "Amount to transfer", example = "120.00", required = true)
+    @Schema(description = "Amount to transfer", example = "120.00")
     private BigDecimal amount;
 
     @Schema(description = "Transfer description", example = "Friend payback")

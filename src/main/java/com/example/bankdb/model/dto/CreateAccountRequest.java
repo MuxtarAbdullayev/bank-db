@@ -19,6 +19,6 @@ public class CreateAccountRequest {
     private AccountType accountType;
 
     @NotNull
-    @DecimalMin(value = "0.0", inclusive = false)
+    @DecimalMin(value = "0.0")
     private BigDecimal initialBalance;
 }
